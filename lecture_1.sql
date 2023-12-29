@@ -41,6 +41,12 @@ ORDER BY age ASC LIMIT 5;
 SELECT student_id, last_name FROM students
 LIMIT 5 OFFSET 4;
 
+SELECT student_id, last_name FROM students
+FETCH FIRST 5 ROW ONLY;
+
+--BETWEEN
+SELECT student_id, last_name,age FROM students
+WHERE age BETWEEN 19 AND 20;
 
 --Column Aliases
 SELECT first_name, last_name AS surname
