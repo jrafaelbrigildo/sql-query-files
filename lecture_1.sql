@@ -23,3 +23,7 @@ VALUES
   (20, 'Lily', 'Gomez', 23, 'F', '1999-06-05', 'Orlando');
   
 select * from students;
+
+create type sex_type as enum('M', 'F');
+
+
