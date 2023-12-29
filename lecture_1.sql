@@ -26,4 +26,28 @@ select * from students;
 
 create type sex_type as enum('M', 'F');
 
+--SELECT QUERY
 select first_name, last_name from students;
+--DISTINCT
+SELECT DISTINCT city FROM students;
+
+--WHERE
+SELECT last_name, age FROM students WHERE age > 20;
+
+--LIMIT
+SELECT last_name, first_name FROM students
+ORDER BY age ASC LIMIT 5;
+
+SELECT student_id, last_name FROM students
+LIMIT 5 OFFSET 4;
+
+
+--Column Aliases
+SELECT first_name, last_name AS surname
+FROM students;
+
+--ORDER BY
+SELECT * FROM students ORDER BY age ASC;
+SELECT * FROM students ORDER BY age DESC;
+
+--UPDATE 
