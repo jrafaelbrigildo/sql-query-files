@@ -26,4 +26,4 @@ select * from students;
 
 create type sex_type as enum('M', 'F');
 
-
+select first_name, last_name from students;
